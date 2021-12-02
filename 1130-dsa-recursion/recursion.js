@@ -1,10 +1,10 @@
 /** product: calculate the product of an array of numbers. */
 
 function product(nums) {
-  //base case
+  //Base Case
   if (nums.length === 0) return 1;
 
-  //ever other case with progress
+  //Recursive Case
   let first = nums.shift();
   return first * product(nums);
 }
