@@ -1,0 +1,14 @@
+{
+  "name": "3.recursion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\"\"",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Colin Sidberry",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
