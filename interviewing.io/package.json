@@ -1,0 +1,14 @@
+{
+  "name": "smallest-strictly-greater-int",
+  "version": "1.0.0",
+  "description": "",
+  "main": "smallestStrictlyGreaterInt.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Colin Sidberry",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
