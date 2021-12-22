@@ -1,0 +1,11 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bitCounting.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Colin Sidberry",
+  "license": "ISC"
+}
