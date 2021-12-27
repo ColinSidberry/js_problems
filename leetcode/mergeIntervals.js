@@ -29,21 +29,17 @@
 function merge(intervals) {
     if (intervals.length === 1) return intervals;
 
-    let mergedIntervals = [];
-    let nonOverlapping = intervals.shift();
+    intervals.sort((a, b) => a[0] - b[0]);
+    let merged = [];
 
-    for (let interval of intervals) { // interval = [15,18]
-        if (interval[0] < nonOverlapping[1]) {
-            nonOverlapping[1] = interval[1]; // nonOverlapping = [1,6]
+    for (let interval of intervals) {
+        if (merged.length === 0 || merged[merged.length - 1][1] < interval[0]) {
+            merged.push(interval);
         } else {
-            mergedIntervals.push(nonOverlapping); // mergedIntervals = [[1,6], [8,10]]
-            nonOverlapping = interval; // nonOverlapping = [15,18]
+            merged[merged.length - 1][1] = Math.max(merged[merged.length - 1][1], interval[1]);
         }
     }
-    mergedIntervals.push(nonOverlapping);
-
-    // console.log(mergedIntervals.toString());
-    return mergedIntervals;
+    return merged;
 };
 
 module.exports = {

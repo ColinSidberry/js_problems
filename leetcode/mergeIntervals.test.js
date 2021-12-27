@@ -15,6 +15,5 @@ describe("testing mergeIntervals function", () => {
                 (b, j) => b === expected[i][j]
             )
         )).toEqual(true);
-        // a.every((val, index) => val === b[index]);
     });
 });
