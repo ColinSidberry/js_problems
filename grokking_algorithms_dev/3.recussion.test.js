@@ -1,6 +1,6 @@
 "use strict";
 
-const { countDown } = require("./countDown");
+const { countDown } = require("./3.recusion");
 
 describe("testing countDown recursive function", () => {
     const log = console.log; // save original console.log function

@@ -1,14 +1,11 @@
 {
-  "name": "3.recursion",
+  "name": "grokking_algorithms_dev",
   "version": "1.0.0",
   "description": "",
-  "main": "\"\"",
+  "main": "1.binary_search.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Colin Sidberry",
-  "license": "ISC",
-  "dependencies": {
-    "jest": "^27.4.5"
-  }
+  "license": "ISC"
 }
