@@ -27,8 +27,10 @@ function romanToInt(s) {
         // coming after it then you have hit the special case where you would 
         // subtract the current value (e.g IV, IX, XL, XC, etc.)
         if (current < after) {
+            // special case
             sum = sum - current;
         } else {
+            // every other case
             sum = sum + current;
         }
     }
