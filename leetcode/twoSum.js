@@ -1,6 +1,11 @@
 "use strict";
 
-// Key takeaway coverting from array to object to acheive O(1) lookup time
+/* Key takeaways: 
+ - coverting from array to object to acheive O(1) lookup time
+ - This is a hash problem because to get an optimal solution we need some 
+ way of looping through once but remember what we previously saw and accessing 
+ it in constant time
+*/
 var twoSum = function(nums, target) {
     const pairs = {}; // to hold the potential pairs
     for(let i = 0; i < nums.length; i++){
