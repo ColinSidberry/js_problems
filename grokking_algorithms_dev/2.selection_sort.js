@@ -1,6 +1,7 @@
 "use strict";
 
-// find the smallest item in an arr
+//Problem: find the smallest item in an arr
+// Notes:
 // assume that the first item is the smallest and assign it and the index as such
 // loop through the arr starting at position 1
 // if that item is smaller adjust smallest item
